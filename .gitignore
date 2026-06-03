@@ -1,15 +1,39 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# OSX
+.DS_Store
+*.pem
 
-# dependencies
-node_modules/
+# Windows
+Thumbs.db
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+**/.xcode.env.local
 
-# Native
+# Android / IntelliJ
+build/
+.idea/
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
 .kotlin/
 *.orig.*
 *.jks
@@ -18,20 +42,11 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
-# generated native folders (prebuild)
-/ios
-/android
-
-# Metro
-.metro-health-check*
-
-# debug & logs
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-*.log
-
-# package managers
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -40,30 +55,36 @@ yarn-error.*
 !.yarn/sdks
 !.yarn/versions
 
-# macOS
-.DS_Store
-*.pem
+# Metro
+.metro-health-check*
 
-# Windows
-Thumbs.db
+# fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
 
-# local env & secrets
+# Bundle
+*.jsbundle
+
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
+
+# Env & secrets
 .env
 .env.*
 !.env.example
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
-# testing & lint
+# Testing & lint
 coverage/
 .eslintcache
 
-# JetBrains IDEs
-.idea/
-
-# Cursor (local agent/state; keep shared rules if you add them later)
+# Cursor
 .cursor/
 
-# optional local tooling
-*.hprof
+# Logs
+*.log

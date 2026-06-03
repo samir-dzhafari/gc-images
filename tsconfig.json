@@ -1,45 +1,26 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true,
-    "baseUrl": ".",
-    "resolveJsonModule": true,
-    "moduleResolution": "bundler",
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noEmit": true,
-    "paths": {
-      // Slices
-      "@app/*": [
-        "./src/app/*"
-      ],
-      "@pages/*": [
-        "./src/pages/*"
-      ],
-      "@widgets/*": [
-        "./src/widgets/*"
-      ],
-      "@features/*": [
-        "./src/features/*"
-      ],
-      "@entities/*": [
-        "./src/entities/*"
-      ],
-      "@shared/*": [
-        "./src/shared/*"
-      ],
-      // Assets
-      "@assets/*": [
-        "./assets/*"
-      ]
-    },
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+	"extends": "@react-native/typescript-config",
+	"compilerOptions": {
+		"strict": true,
+		"ignoreDeprecations": "6.0",
+		"baseUrl": ".",
+		"resolveJsonModule": true,
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noEmit": true,
+		"types": ["jest"],
+		"paths": {
+			"@app/*": ["./src/app/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@widgets/*": ["./src/widgets/*"],
+			"@features/*": ["./src/features/*"],
+			"@entities/*": ["./src/entities/*"],
+			"@shared/*": ["./src/shared/*"],
+			"@assets/*": ["./assets/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "index.js", "__tests__/**/*.ts", "__tests__/**/*.tsx"],
+	"exclude": ["node_modules", "android", "ios"]
 }

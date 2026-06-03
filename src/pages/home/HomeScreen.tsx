@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export function LogIn() {
+export function HomeScreen() {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.text}>Log in</Text>
+			<Text>Edit src/pages/home/HomeScreen.tsx to edit this screen.</Text>
+			<Text style={styles.text}>Home screen</Text>
 		</View>
 	);
 }
