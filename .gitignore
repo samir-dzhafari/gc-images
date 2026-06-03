@@ -18,26 +18,52 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
+# generated native folders (prebuild)
+/ios
+/android
+
 # Metro
 .metro-health-check*
 
-# debug
+# debug & logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+
+# package managers
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # macOS
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# Windows
+Thumbs.db
+
+# local env & secrets
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo
 
-example
+# testing & lint
+coverage/
+.eslintcache
 
-# generated native folders
-/ios
-/android
+# JetBrains IDEs
+.idea/
+
+# Cursor (local agent/state; keep shared rules if you add them later)
+.cursor/
+
+# optional local tooling
+*.hprof
