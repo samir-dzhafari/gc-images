@@ -1,16 +1,10 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar } from 'react-native';
-
-import { RootNavigator } from '@app/navigation/RootNavigator';
-import { AppProviders } from '@app/providers';
+import { RootNavigator } from './navigation/root/RootNavigator.tsx';
+import { AppProviders } from './providers';
 
 export function App() {
 	return (
 		<AppProviders>
-			<NavigationContainer>
-				<RootNavigator />
-				<StatusBar barStyle='light-content' />
-			</NavigationContainer>
+			<RootNavigator />
 		</AppProviders>
 	);
 }

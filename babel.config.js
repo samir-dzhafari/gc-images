@@ -12,7 +12,7 @@ module.exports = {
 					'@features': './src/features',
 					'@entities': './src/entities',
 					'@shared': './src/shared',
-					'@assets': './assets',
+					'@assets': './src/assets',
 				},
 				extensions: [
 					'.ios.js',

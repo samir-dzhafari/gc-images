@@ -18,9 +18,16 @@
 			"@features/*": ["./src/features/*"],
 			"@entities/*": ["./src/entities/*"],
 			"@shared/*": ["./src/shared/*"],
-			"@assets/*": ["./assets/*"]
+			"@assets/*": ["./src/assets/*"]
 		}
 	},
-	"include": ["src/**/*.ts", "src/**/*.tsx", "index.js", "__tests__/**/*.ts", "__tests__/**/*.tsx"],
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.d.ts",
+		"index.js",
+		"__tests__/**/*.ts",
+		"__tests__/**/*.tsx"
+	],
 	"exclude": ["node_modules", "android", "ios"]
 }

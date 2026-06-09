@@ -12,9 +12,13 @@
 	"embeddedLanguageFormatting": "auto",
 	"singleAttributePerLine": true,
 	"arrowParens": "avoid",
+	"experimentalOperatorPosition": "start",
 	"quoteProps": "as-needed",
 	"plugins": ["@ianvs/prettier-plugin-sort-imports"],
 	"importOrder": [
+		"^react$",
+		"^react-native$",
+		"^node:.*",
 		"<THIRD_PARTY_MODULES>",
 		"^@app/(.*)$",
 		"^@pages/(.*)$",
@@ -26,7 +30,6 @@
 		"^../(.*)$",
 		"^./(.*)$"
 	],
-	"importOrderSeparation": true,
-	"importOrderSortSeparation": true,
+	"importOrderTypeScriptVersion": "5.0.0",
 	"proseWrap": "always"
 }

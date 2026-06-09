@@ -1,4 +1,7 @@
 import baseConfig from '@ssheverev/eslint-config';
+import { fsdBoundariesConfig } from './eslint/fsd-boundaries.mjs';
+import { sameAliasRelativeConfig } from './eslint/same-alias-relative.mjs';
+import { typescriptConfig } from './eslint/typescript.mjs';
 
 export default [
 	{
@@ -14,4 +17,12 @@ export default [
 		],
 	},
 	...baseConfig,
+	...typescriptConfig,
+	...fsdBoundariesConfig,
+	...sameAliasRelativeConfig,
+	{
+		rules: {
+			'simple-import-sort/imports': 'off',
+		},
+	},
 ];
