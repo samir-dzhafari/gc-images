@@ -1,13 +1,19 @@
-import { NavigationContainer } from '@react-navigation/native';
+import { forwardRef, ForwardRefRenderFunction } from 'react';
+import {
+	NavigationContainer,
+	NavigationContainerRef,
+} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { RootStackParamList } from '@shared/navigation/navigationStackParamList.ts';
-import { rootRoutes } from './routes.tsx';
+import { RootStackParamList } from '@shared/navigation/navigationStackParamList';
+import { rootRoutes } from './routes';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-export function RootNavigator() {
+const RootNavigator: ForwardRefRenderFunction<
+	NavigationContainerRef<RootStackParamList>
+> = (_, ref) => {
 	return (
-		<NavigationContainer>
+		<NavigationContainer ref={ref}>
 			<Stack.Navigator
 				initialRouteName='Main'
 				screenOptions={{ headerShown: false }}
@@ -21,4 +27,6 @@ export function RootNavigator() {
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
-}
+};
+
+export default forwardRef(RootNavigator);

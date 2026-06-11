@@ -1,10 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { useTranslation } from '@shared/lib/i18n';
+import { useAppTheme } from '@shared/lib/providers/theme/themeContext';
+import { themes } from '@shared/styles/themes';
 
 export function HomeScreen() {
+	const { t } = useTranslation();
+	const { theme, storageTheme, changeTheme, toggleTheme } = useAppTheme();
+
+	themes.static.color;
+
 	return (
 		<View style={styles.container}>
-			<Text>Edit src/pages/home/HomeScreen.tsx to edit this screen.</Text>
-			<Text style={styles.text}>Home screen</Text>
+			<Text style={styles.text}>{t('home.editHint')}</Text>
+			<Text style={styles.text}>{t('home.title')}</Text>
 		</View>
 	);
 }

@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { MainNavigationStackParamList } from '@shared/navigation/navigationStackParamList.ts';
-import { mainRoutes } from './routes.tsx';
+import { MainNavigationStackParamList } from '@shared/navigation/navigationStackParamList';
+import { mainRoutes } from './routes';
 
 const Stack = createNativeStackNavigator<MainNavigationStackParamList>();
 

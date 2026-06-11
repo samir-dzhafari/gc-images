@@ -1,7 +1,7 @@
 import { ComponentType } from 'react';
-import { RootStackParamList } from '@shared/navigation/navigationStackParamList.ts';
-import { AuthNavigator } from '../auth/AuthNavigator.tsx';
-import { MainNavigator } from '../main/MainNavigator.tsx';
+import { RootStackParamList } from '@shared/navigation/navigationStackParamList';
+import { AuthNavigator } from '../auth/AuthNavigator';
+import { MainNavigator } from '../main/MainNavigator';
 
 type IRootRoute = {
 	name: keyof RootStackParamList;

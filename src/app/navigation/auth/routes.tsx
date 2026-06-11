@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
-import { AuthNavigationStackParamList } from '@shared/navigation/navigationStackParamList.ts';
-import { AuthNavigator } from '../auth/AuthNavigator.tsx';
+import { AuthNavigationStackParamList } from '@shared/navigation/navigationStackParamList';
+import { AuthNavigator } from '../auth/AuthNavigator';
 
 type IAuthRoute = {
 	name: keyof AuthNavigationStackParamList;

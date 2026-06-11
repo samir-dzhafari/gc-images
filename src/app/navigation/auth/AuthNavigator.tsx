@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { AuthNavigationStackParamList } from '@shared/navigation/navigationStackParamList.ts';
-import { authRoutes } from './routes.tsx';
+import { AuthNavigationStackParamList } from '@shared/navigation/navigationStackParamList';
+import { authRoutes } from './routes';
 
 const Stack = createNativeStackNavigator<AuthNavigationStackParamList>();
 

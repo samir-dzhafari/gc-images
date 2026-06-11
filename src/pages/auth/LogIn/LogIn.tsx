@@ -1,14 +1,16 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { useAuthNavigation } from '@shared/navigation/appNavigation.tsx';
+import { useTranslation } from '@shared/lib/i18n';
+import { useAuthNavigation } from '@shared/navigation/navigationHooks';
 
 export function LogIn() {
+	const { t } = useTranslation();
 	const { navigate } = useAuthNavigation();
 
 	return (
 		<View style={styles.container}>
-			<Text style={styles.text}>Log in</Text>
+			<Text style={styles.text}>{t('common.login')}</Text>
 			<Pressable onPress={() => navigate('LogIn')}>
-				Go to Register
+				<Text style={styles.text}>{t('common.goToRegister')}</Text>
 			</Pressable>
 		</View>
 	);

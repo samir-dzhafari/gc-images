@@ -1,0 +1,10 @@
+{
+	"common": {
+		"login": "Вход",
+		"goToRegister": "Перейти к регистрации"
+	},
+	"home": {
+		"title": "Главная",
+		"editHint": "Отредактируйте src/pages/home/HomeScreen.tsx, чтобы изменить этот экран."
+	}
+}

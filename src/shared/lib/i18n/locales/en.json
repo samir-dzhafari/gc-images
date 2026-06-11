@@ -1,0 +1,10 @@
+{
+	"common": {
+		"login": "Log in",
+		"goToRegister": "Go to Register"
+	},
+	"home": {
+		"title": "Home screen",
+		"editHint": "Edit src/pages/home/HomeScreen.tsx to edit this screen."
+	}
+}

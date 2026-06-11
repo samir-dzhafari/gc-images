@@ -9,7 +9,7 @@ import type {
 	AuthNavigationStackParamList,
 	MainNavigationStackParamList,
 	RootStackParamList,
-} from 'src/shared/navigation/navigationStackParamList.ts';
+} from 'src/shared/navigation/navigationStackParamList';
 
 type AppStackParamListMap = {
 	auth: AuthNavigationStackParamList;
